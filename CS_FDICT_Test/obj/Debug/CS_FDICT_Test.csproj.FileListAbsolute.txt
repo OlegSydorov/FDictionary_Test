@@ -1,0 +1,7 @@
+E:\Projects\CS_FDICT_Test\CS_FDICT_Test\obj\Debug\CS_FDICT_Test.csprojAssemblyReference.cache
+E:\Projects\CS_FDICT_Test\CS_FDICT_Test\obj\Debug\CS_FDICT_Test.csproj.CoreCompileInputs.cache
+E:\Projects\CS_FDICT_Test\CS_FDICT_Test\bin\Debug\CS_FDICT_Test.exe.config
+E:\Projects\CS_FDICT_Test\CS_FDICT_Test\bin\Debug\CS_FDICT_Test.exe
+E:\Projects\CS_FDICT_Test\CS_FDICT_Test\bin\Debug\CS_FDICT_Test.pdb
+E:\Projects\CS_FDICT_Test\CS_FDICT_Test\obj\Debug\CS_FDICT_Test.exe
+E:\Projects\CS_FDICT_Test\CS_FDICT_Test\obj\Debug\CS_FDICT_Test.pdb
