@@ -1,0 +1,5 @@
+Class name: Language
+Field Name <name> Field type <System.String> Field value <Urdu>
+Field Name <speakers> Field type <System.Int64> Field value <68620000>
+Field Name <countries> Field type <System.Int32> Field value <2>
+Field Name <type> Field type <System.String> Field value <synthetic inflectional nominative>

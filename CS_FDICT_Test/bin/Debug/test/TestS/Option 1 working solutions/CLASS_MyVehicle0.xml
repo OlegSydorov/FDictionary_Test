@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Class_MyVehicle>
+  <FIELD value="Sequoia" type="System.String" name="Model" />
+  <FIELD value="Toyota" type="System.String" name="Brand" />
+  <FIELD value="2015" type="System.Int64" name="MakeYear" />
+  <FIELD value="2019" type="System.Int64" name="PurchaseYear" />
+  <FIELD value="Oleg Sydorov" type="System.String" name="OwnerName" />
+</Class_MyVehicle>

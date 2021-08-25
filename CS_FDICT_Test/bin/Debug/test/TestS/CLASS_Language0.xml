@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Class_Language>
+  <FIELD value="English" type="System.String" name="name" />
+  <FIELD value="300000000" type="System.Int64" name="speakers" />
+  <FIELD value="60" type="System.Int32" name="countries" />
+  <FIELD value="analytical nominative" type="System.String" name="type" />
+</Class_Language>

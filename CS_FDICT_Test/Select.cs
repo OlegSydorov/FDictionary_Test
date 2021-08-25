@@ -7,12 +7,18 @@ using System.IO;
 
 namespace CS_FDICT_Test
 {
-    class Select
+    public class Select
     {
         Dictionary<string, int> fDictionary;
         List<string> texts;
         string path;
+        string resultPath;
         string text;
+
+        public List<string> Texts { get { return texts; } }
+
+        public Dictionary<string, int> Dictionary { get { return fDictionary; } }
+
 
         public Select()
         {
@@ -45,8 +51,16 @@ namespace CS_FDICT_Test
                     try
                     {
 
-                        tempStr = File.ReadAllText(s);
+                        StreamReader stream = new StreamReader(s);
+                        string line;
+                        line = stream.ReadLine();
 
+                        while (line != null)
+                        {
+                            tempStr += line;
+                            line = stream.ReadLine();
+                        }
+                        stream.Close();
                     }
                     catch (Exception e)
                     {
@@ -63,12 +77,19 @@ namespace CS_FDICT_Test
         public void WORDSelect(string text)
         {
             string word = null;
-            char[] separators = new char[] { ' ', ';', ':', '"', '-', '\'', '\\', ',', '\t', '\n', '\r', '.', '!', '?', '…', '(', ')' };
+            char[] separators = new char[] { ' ', ';', ':', '\'', '"', '‘', '“', '’', '”', '<', '>',
+                                             '_', '$', '#', '/', '[', ']', '-', '\'', '\\', ',',
+                                            '\t', '\n', '\r', '.', '!', '?', '…', '(', ')', '—', '—'};
 
             string[] SUBs = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (string sub in SUBs)
             {
+                if (sub == "How?")
+                {
+                    Console.WriteLine(text);
+                    Console.ReadKey();
+                }
                 word = sub;
                 if (fDictionary.ContainsKey(word))
                 {
@@ -108,12 +129,46 @@ namespace CS_FDICT_Test
 
         public void Save(string path)
         {
-            StreamWriter stream = new StreamWriter(path, false, Encoding.Default);
+            resultPath = path;
+            StreamWriter stream = new StreamWriter(resultPath, false);
             foreach (var s in fDictionary)
             {
-                stream.WriteLine(s.Key + "............................" + s.Value);
+                if (s.Key == "how") Console.WriteLine("!!!");
+                stream.WriteLine(s.Key + " ............................ " + s.Value);
             }
             stream.Close();
+        }
+
+        public void Load()
+        {
+            Dictionary<string, int> temp = new Dictionary<string, int>();
+            StreamReader stream = new StreamReader(resultPath);
+            string line;
+            line = stream.ReadLine();
+
+            while (line != null)
+            {
+                char[] separators = new char[] { '.', ' '};
+                string[] SUBs = line.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+                if (SUBs[0] == "How?") Console.WriteLine(line);
+                temp.Add(SUBs[0], Convert.ToInt32(SUBs[1]));
+
+                line = stream.ReadLine();
+            }
+            stream.Close();
+
+            foreach (var item in fDictionary)
+            {
+                if (temp.ContainsKey(item.Key))
+                {
+                    if (temp[item.Key] != item.Value)
+                    {
+                        Console.WriteLine(item.Key + "..." + item.Value);
+                    }
+                }
+                else Console.WriteLine(item.Key + "..." + item.Value);
+
+            }
         }
              
     }

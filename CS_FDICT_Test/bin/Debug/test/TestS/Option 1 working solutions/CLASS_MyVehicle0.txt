@@ -1,0 +1,6 @@
+Class name: MyVehicle
+Field Name <Model> Field type <System.String> Field value <Sequoia>
+Field Name <Brand> Field type <System.String> Field value <Toyota>
+Field Name <MakeYear> Field type <System.Int64> Field value <2015>
+Field Name <PurchaseYear> Field type <System.Int64> Field value <2019>
+Field Name <OwnerName> Field type <System.String> Field value <Oleg Sydorov>

@@ -1,0 +1,5 @@
+Class name: TextEditor
+Field Name <Doublecount> Field type <System.Int32> Field value <4>
+Field Name <d1> Field type <System.Double> Field value <0>
+Field Name <d2> Field type <System.Double> Field value <100>
+Field Name <path> Field type <System.String> Field value <e:\text\2mod.txt>

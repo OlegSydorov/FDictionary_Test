@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Class_TextEditor>
+  <FIELD value="4" type="System.Int32" name="Doublecount" />
+  <FIELD value="0" type="System.Double" name="d1" />
+  <FIELD value="100" type="System.Double" name="d2" />
+  <FIELD value="e:\text\2mod.txt" type="System.String" name="path" />
+</Class_TextEditor>

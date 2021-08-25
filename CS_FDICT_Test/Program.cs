@@ -37,6 +37,7 @@ namespace CS_FDICT_Test
             Console.WriteLine("Enter resulting file name:");
             string targetPath = Console.ReadLine();
             sel.Save(targetPath);
+            //sel.Load();
         }
     }
 }

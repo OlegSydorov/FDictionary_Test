@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Class_Language>
+  <FIELD value="Urdu" type="System.String" name="name" />
+  <FIELD value="68620000" type="System.Int64" name="speakers" />
+  <FIELD value="2" type="System.Int32" name="countries" />
+  <FIELD value="synthetic inflectional nominative" type="System.String" name="type" />
+</Class_Language>
